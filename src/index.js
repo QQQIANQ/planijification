@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Client from "./client";
+import BasicTable from "./demo";
+import CreateProjet from "./projet";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      />
+    <Client />
+      <BasicTable/>
+      <CreateProjet/>
   </React.StrictMode>,
   document.getElementById('root')
 );
